@@ -1,0 +1,30 @@
+/* Custom styling for select element */
+.template-container {
+    margin-bottom: 20px; /* Add margin for spacing */
+  }
+  
+  /* Style the select element */
+  .select-element {
+    width: 17rem;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  
+  /* Style the select options */
+  .select-option {
+    font-size: 16px;
+  }
+  
+  /* Style the select dropdown arrow */
+  .select-arrow {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none; /* Prevent interaction with the arrow */
+  }
+  

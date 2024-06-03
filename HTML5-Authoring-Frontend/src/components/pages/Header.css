@@ -1,0 +1,40 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #000;
+    z-index: 1000; 
+    border-bottom: 1px solid #000;
+  }
+  
+  .home-link {
+    color: #000;
+    text-decoration: none;
+  }
+  
+  .home-icon {
+    font-size: 1.5rem;
+    margin-right: 10px;
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: center;
+    padding-right: 2rem;
+  }
+  
+  .user-icon {
+    font-size: 1.2rem;
+    margin-right: 5px;
+  }
+  
+  .username {
+    font-weight: bold;
+  }
+  

@@ -1,0 +1,10 @@
+.DS_Store
+*.log
+node_modules/
+vendor/
+target/
+frondEndBackup/
+SeetingUpProject.docx
+Rise/
+server copy.js
+package-lock.json
