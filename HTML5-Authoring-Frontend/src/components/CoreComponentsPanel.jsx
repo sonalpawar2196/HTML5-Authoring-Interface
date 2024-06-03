@@ -1,6 +1,7 @@
 import propTypes from "prop-types";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { BsTypeH1, BsTypeH2, BsTypeH3, BsTypeH4, BsTypeH5, BsTypeH6, BsParagraph } from 'react-icons/bs'
 import '../components/CoreComponentsPanel.css';
+
 const CoreComponentsPanel = ({ template, onSelectComponent }) => {
   const handleSelectComponentByType = (component) => {
     let componentData = { type: component.type};
@@ -22,7 +23,26 @@ const CoreComponentsPanel = ({ template, onSelectComponent }) => {
     }
     onSelectComponent(componentData);
   };
-
+  const getIcon = (iconName) => {
+    switch (iconName) {
+      case 'headingOne':
+        return <BsTypeH1 size={20}/>;
+      case 'headingTwo':
+        return <BsTypeH2 size={20}/>;
+      case 'headingThree':
+        return <BsTypeH3 size={20}/>;
+      case 'headingFour':
+        return <BsTypeH4 size={20}/>;
+      case 'headingFive':
+        return <BsTypeH5 size={20}/>;
+      case 'headingSix':
+        return <BsTypeH6 size={20}/>;      
+      case 'Paragraph':
+        return <BsParagraph size={20}/>;
+      default:
+        return null;
+    }
+  };
   return (
     <div className="templates-panel-main">
       <h2>Core Components for Template: {template.name}</h2>
@@ -32,8 +52,7 @@ const CoreComponentsPanel = ({ template, onSelectComponent }) => {
             key={index}
             onClick={() => handleSelectComponentByType(component)}
           >
-            {/* <FontAwesomeIcon key={index} icon={component.icon} /> */}
-            {component.placeholder}
+            {getIcon(component.icon)}
           </button>
         ))}
         {/* <button

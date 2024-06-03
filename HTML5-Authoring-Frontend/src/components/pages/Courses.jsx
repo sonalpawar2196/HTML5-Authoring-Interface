@@ -100,7 +100,7 @@ const Courses = () => {
          </div>
          <div className="col-md-3 d-flex align-items-center">
          {/* CREATE COURSE BUTTON */}
-          <p>Tab on CREATE to start creating your course <br></br><button class="create-button" onClick={() => setShowCourseForm(true)}>CREATE</button></p>
+          <p>Tab on CREATE to start creating your course <br></br><button className="create-button" onClick={() => setShowCourseForm(true)}>CREATE</button></p>
          </div>
          </div>
         

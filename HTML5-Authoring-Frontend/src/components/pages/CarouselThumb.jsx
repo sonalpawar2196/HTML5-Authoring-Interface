@@ -16,9 +16,9 @@ const Carousel = ({ title, heading, description, images }) => {
       <div className="carousel">
         <h5>{title}</h5>
         <div style={{ height: '200px', width: '200px', padding: '20px', marginBottom: '20px', border: '2px solid black', overflow: 'hidden' }}>
-            <h6 align="left">{heading}</h6>
-            <p align="left">{description}</p>
-            <div class="d-flex justify-content-center align-items-center">
+            <h6>{heading}</h6>
+            <p>{description}</p>
+            <div className="d-flex justify-content-center align-items-center">
                 <div className="col-md-2">
                     <button onClick={goToPrevSlide}>&#11207;</button>
                 </div>
